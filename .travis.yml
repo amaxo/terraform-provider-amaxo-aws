@@ -4,6 +4,8 @@ go:
 - tip
 before_deploy:
 - go install -v ./...
+- ls -a .
+- ls -a $GOPATH
 deploy:
   provider: releases
   api_key:
