@@ -11,5 +11,9 @@ deploy:
   api_key:
     secure: O6OoT/dQ73PKI9gIydOzbqfMHRuUcmQun+bbO96KL339k2CjIGWjIKBLZpgWNr20BjE1IzPXLfVP9QaJ5K4fQd1Y6SHD4rW7VqJr+mWa/DS058kFoHJz6Fko000p2LYu5AINXsQtGzN2cpT91Dj0uryDCxSl8IlULnEcqZK2Oh/BVrSVtzAT5hx7GUHBccFK9BOIShPVct6Uw65sK7c4+rNzbrr1QgWxEcMqkg+6p4Lx+p+A+O1EtipVTGFwKEaHflBpHMdFH8Z4QsBqAcgN1subBVWGYYVqxLAHZgjO2m6gF/mrhQgobLLPCCKgwSdW3tb0PiQf2kiZ9eA8SA/1Z6mISW7Z8Fo/phq6CVU6MKXK7IpEq98Jv7wDDV4OhWSMEEvMwD6HZ+ZZCw3PTQI5ctRJKh2/7w59WvhRkNV+8LG32+1nRndps50Ee2SzgjhHRS+2GBhZAlpWy6w4BEv8jWlD7FJHKGW+/Kxg1Rhh9DjnQQR5dEKqY3oVctrNc/QEt7rddAlfjlUS5/AW1TZj/mQIj9YHGNP5B2oSNqyOmchaCINzQYotDAq7qPvMEjA4Ba7f6EXNLIXjRhzrByNW59jmmBlbrg/TMsQL1uPcy4SjjMzgor1Zj2zAsi6gVXzUkAlVa0aQlFpZGd8M1qVymaHqapZWbu4L+3nvxB7mguA=
   file: "$GOPATH/bin/terraform-provider-amaxo-aws"
+  skip_cleanup: true
   on:
     repo: amaxo/terraform-provider-amaxo-aws
+    tags: true
+    all_branches: true
+
